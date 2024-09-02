@@ -1,7 +1,4 @@
-N = int(input())
-nList = list(map(int,input().split()))
-nMax = max(nList)
-total = 0
-for value in nList:
-    total += value/nMax*100
-print(total/len(nList))
+n = int(input())
+score = list(map(int, input().split()))
+avg = (sum(score) / max(score) * 100) / n
+print(avg)
